@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header{
+      text-align: center;
+      font-size: 50px;
+      text-shadow: black 0 0 10px
+    }
+      ul {
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    body {
+      
+      background: url("http://i.imgur.com/p1I8zE1.jpg");
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      color: pink;
+      font-family: Bauhaus93;
+    }
+     p {
+      font-size: 30px;
+      text-shadow: black 0 0 10px;
+      position: center;
+    }
+    input[type="email"] {
+      border: 0;
+      padding: 15px;
+      font-size: 20px;
+      font-family: Bauhaus93;
+      position: center;
+    }
+    input[type="submit"] {
+      background: grey;
+      color: white;
+      border: 0;
+      padding: 15px;
+      font-size: 20px;
+      font-family: Bauhaus93;
+      position: center;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 10px solid white;
+      border-radius: 250px;
+    }
+    a {
+    	color: pink;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+	<header>
+		<h1>Marti's Page</h1>
+		<ul>
+      		<li><a href="#">About Me</a></li>
+     		 <li><a href="#">Travel</a></li>
+     		 <li><a href="#">Food</a></li>
+   		 </ul>
+	</header>
+ <img src="http://i.imgur.com/2DJ2Jgr.png">
+<p>Welcome to my first page! It's pretty basic, but I'm still working on it!</p>
+<input type="email" placeholder="Your email">
+  <input type="submit">
+  <script>
+    $("submit").on("click", function() {
+      alert("This function doesn't work quite yet, but it should soon!");
+    });
+  </script>
+</body>
